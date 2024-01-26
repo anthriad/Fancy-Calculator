@@ -1,0 +1,64 @@
+/* Style the html elements for the calculator */
+
+body{
+  margin: 0; /* tried using 'none' first instead of 0; didn't work */
+  display: flex; /* allows to freely adjust the position of calculator */
+  justify-content: center; /* centers calculator on page */
+  align-items: center; /* centers calculator on page */
+  height: 100vh; /* 100% of the viewport height; places body 
+  in center horizontally & vertically */
+  background-color: hsl(0, 0%, 85%);
+}
+#CalculatorFrame{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: hsl(0, 0%, 42%);
+  border-radius: 30px;
+  max-width: 525px;
+  overflow: hidden; /* used to hide overflow of an equation
+  that is too long for the display */
+}
+#display {
+  width: 100%;
+  padding: 20px; /* used padding rather than adding a height element */
+  font-size: 5rem;
+  text-align: left;
+  border: none;
+  background-color: hsl(0, 0%, 30%);
+  color: white;
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  padding: 25px;
+
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: none;
+  background-color:hsl(0, 0%, 30%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  background-color: hsl(0, 0%, 35%); /* changes color when hovering cursor over button */
+}
+button:active {
+  background-color: hsl(0, 0%, 50%); /* changes color when button is clicked */
+}
+
+.operator-button{
+  background-color: rgb(53, 130, 164);
+}
+.operator-button:hover {
+  background-color: rgb(53, 140, 164);
+}
+.operator-button:active {
+  background-color: rgb(53, 150, 164);
+}
